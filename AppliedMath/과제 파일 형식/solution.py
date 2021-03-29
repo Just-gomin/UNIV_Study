@@ -1,16 +1,25 @@
 import numpy as np
 
 
-def inputLayer(x1, x2):
-    pass
+def inputLayer(x):
+    w1 = np.array([])
+    w2 = np.array([])
+    a1 = 1 if np.sum(w1*x) else 0
+    a2 = 1 if np.sum(w2*x) else 0
+    return np.array([1, a1, a2])
 
 
-def hiddenLater(a1, a2):
-    pass
+def hiddenLayer(a):
+    w = np.array([])
+    res = np.sum(w*a)
+    return 1 if res else 0
 
 
 def solution(x1, x2):
-    pass
+    x = np.array([1, x1, x2])
+    a = inputLayer(x)
+    res = hiddenLayer(a)
+    return res
 
 
 exTable = []
