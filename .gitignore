@@ -1,5 +1,8 @@
 # Mac's Service File
 .DS_Store
 
+# vscode setting
+.vscode
+
 # AppliedMath's Lecture
 AppliedMath/lecture
