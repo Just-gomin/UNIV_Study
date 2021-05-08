@@ -65,7 +65,7 @@ int main(void) {
 		cl10[timer % 10] = cpuLoad;
 		cl15[timer % 15] = cpuLoad;
 
-		printf("%04d.%02d.%02d %02d:%02d:%02d : ", lt.wYear, lt.wMonth, lt.wDay, lt.wHour, lt.wMinute, lt.wSecond);
+		printf("%-03d %04d.%02d.%02d %02d:%02d:%02d : ", timer, lt.wYear, lt.wMonth, lt.wDay, lt.wHour, lt.wMinute, lt.wSecond);
 		printf("[CPU Load: %6.2f%%] ", cpuLoad);
 
 		if (timer >= 5 - 1) {
