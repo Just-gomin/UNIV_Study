@@ -4,6 +4,9 @@
 # vscode setting
 .vscode
 
+# Python pycache
+__pycache__
+
 # AppliedMath's Lecture
 AppliedMath/lecture
 
